@@ -9,7 +9,6 @@ import sessions from "express-session";
 
 export function createApp(dbconfig) {
   const app = express();
-
   const pool = new Pool(dbconfig);
 
   app.engine("handlebars", engine());
