@@ -4,7 +4,7 @@
   font-family: "sofia-reg", sans-serif;
   font-weight: 400;
   font-style: normal;
-
+ 
   font-family: "sofia-sem", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -19,17 +19,151 @@ footer {
   padding: 12px;
 }
 
-body   { 
-	background-color: #d4674b; 
-	color: rgb(0, 0, 0);
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d16f42;
 }
 
 
 
 
-#eae6e1
-#d4674b
-#bfc6a3
-#c0a163
-#e1beb0
-#567667
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+header .icons {
+  display: flex;
+  gap: 10px;
+}
+
+header .icons img {
+  width: 30px;
+  height: auto;
+}
+
+
+
+.welcome_text  { 
+	color: #eae6e1;
+  font-family: "sofia-sem", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 2%;
+}
+
+.welcome_title  { 
+	color: #bfc6a3; 
+  font-family: "sofia-sem", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 2%;
+}
+
+
+
+
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f6f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  color: #d87253;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.rate-this {
+  text-align: center;
+  background-color: #e57353;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.rate-this .rating-stars span {
+  font-size: 1.5em;
+  color: #4d8764;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ingredients, .recipe {
+  width: 48%;
+}
+
+h2 {
+  color: #d87253;
+  margin-bottom: 10px;
+}
+
+.ingredients ul {
+  list-style-type: none;
+}
+
+.ingredients ul li {
+  margin-bottom: 10px;
+}
+
+.recipe p {
+  line-height: 1.6;
+  color: #666;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-section h2 {
+  color: #d87253;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #f4d9cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.comment strong {
+  color: #d87253;
+  display: block;
+}
+
+.comment p {
+  color: #666;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+
+
+
