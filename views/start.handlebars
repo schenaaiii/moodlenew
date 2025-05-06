@@ -1,11 +1,47 @@
-<h1 class="welcome_title">Welcome!</h1>
-<p class="welcome_text">
-  Willkommen bei Sip & Co., deinem neuen Lieblingsort für köstliche
-  Kaffeerezepte und Barista-Geheimnisse! Hier findest du alles von klassischen
-  Zubereitungen bis hin zu kreativen, ausgefallenen Kreationen, die deine Liebe
-  zu Kaffee & Drinks neu entfachen werden. Lass dich inspirieren und entdecke,
-  wie vielseitig und genussvoll die Welt des Kaffees sein kann!</p>
+<body class="main">
 
-<img src="" />
+  <div class="header">
+    Willkommen
+    <span>Maximilian Musterlimann</span>
+  </div>
 
-<title> </title>
+  <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">▼ Semester 4</button>
+    <div id="dropdown-content" class="dropdown-content">
+      <div>Semester 1</div>
+      <div>Semester 2</div>
+      <div>Semester 3</div>
+      <div>Semester 4</div>
+    </div>
+  </div>
+
+  <!-- Upcoming tasks -->
+  <div class="bucket">
+    <div class="task">
+      <span>12:00</span>
+      <span>19.07 - Fällige Aufgabe - Deutsch</span>
+    </div>
+    <div class="task">
+      <span>17:30</span>
+      <span>21.07 - Fällige Aufgabe - Deutsch</span>
+    </div>
+  </div>
+
+  <!-- Subject Boxes -->
+  <div class="grid">
+    <a href="/subject" class="subject deutsch">Deutsch</a>
+    <a href="/subject2" class="subject mathematik">Mathematik</a>
+    <a href="/subject3" class="subject franzoesisch">Französisch</a>
+    <a href="/subject4" class="subject englisch">Englisch</a>
+  </div>
+
+  <script>
+    function toggleDropdown() { const dropdown =
+    document.getElementById("dropdown-content"); dropdown.style.display =
+    dropdown.style.display === "block" ? "none" : "block"; } // Optional: close
+    dropdown if clicked outside window.onclick = function(event) { if
+    (!event.target.matches('.dropbtn')) { const dropdowns =
+    document.getElementsByClassName("dropdown-content"); for (let i = 0; i <
+    dropdowns.length; i++) { dropdowns[i].style.display = "none"; } } }
+  </script>
+</body>
